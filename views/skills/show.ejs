@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill</title>
+</head>
+<body>
+    <a href="/">Home</a> | <a href="/skills">Skills List</a>
+    <h3>SKILL #<%= skillNum %></h3>
+    <h3><%= skill.skill %></h3>
+    <form action="/skills/<%= skill.id %>?_method=DELETE"
+        class="delete-form" method="POST">
+       <button type="submit">DELETE SKILL</button>
+    </form>
+</body>
+</html>
